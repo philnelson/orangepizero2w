@@ -9,5 +9,7 @@ jobs:
         with:
           armbian_token:     "${{ secrets.GITHUB_TOKEN }}"  # GitHub token
           armbian_release:   "jammy"                        # userspace
+          armbian_kernel_branch: "edge"
           armbian_target:    "build"                        # build=image, kernel=kernel
-          armbian_board:     "bananapim5"                   # build target
+          armbian_board:     "orangepizero2w"                   # build target
+          armbian_ui: "xfce"
